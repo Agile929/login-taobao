@@ -4,12 +4,6 @@ import os
 import json
 import requests
 
-"""
-获取详细教程、获取代码帮助、提出意见建议
-关注微信公众号「裸睡的猪」与猪哥联系
-@Author  :   猪哥,
-@Version :   2.0"
-"""
 
 s = requests.Session()
 # cookies序列化文件
@@ -69,11 +63,6 @@ class UsernameLogin:
         :return: 验证成功返回st码申请地址
         """
         verify_password_headers = {
-            # 'Connection': 'keep-alive',
-            # ':authority': 'login.taobao.com',
-            # ':method': 'POST',
-            # ':path': '/member/login.jhtml?redirectURL=https%3A%2F%2Fi.taobao.com%2Fmy_taobao.htm%3Fspm%3Da2d00.7723416.754894437.1.61531fc917M0p9%26ad_id%3D%26am_id%3D%26cm_id%3D%26pm_id%3D1501036000a02c5c3739',
-            # ':scheme': 'https',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'zh-CN,zh;q=0.9',
@@ -109,7 +98,6 @@ class UsernameLogin:
             'newMini2': 'false',
             'loginType': '3',
             'gvfdcname': '10',
-            # 'gvfdcre': '68747470733A2F2F6C6F67696E2E74616F62616F2E636F6D2F6D656D6265722F6C6F676F75742E6A68746D6C3F73706D3D613231626F2E323031372E3735343839343433372E372E356166393131643970714B52693126663D746F70266F75743D7472756526726564697265637455524C3D68747470732533412532462532467777772E74616F62616F2E636F6D253246',
             'TPL_password_2': self.TPL_password2,
             'loginASR': '1',
             'loginASRSuc': '1',
